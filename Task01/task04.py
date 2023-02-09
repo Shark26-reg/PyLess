@@ -48,6 +48,7 @@ for i in products:
     product_counts.append(i[1].get('количество'))
     product_measures.append(i[1].get('eд'))
 
-rep_dict.update({'название': product_names, 'цена': product_prices,'количество': product_counts,'eд': product_measures})
+rep_dict.update(
+    {'название': product_names, 'цена': product_prices, 'количество': product_counts, 'eд': product_measures})
 
 print(rep_dict)
