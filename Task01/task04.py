@@ -40,17 +40,13 @@ product_names = []
 product_prices = []
 product_counts = []
 product_measures = []
+rep_dict = {}
 for i in products:
     product_names.append(i[1].get('название'))
     product_prices.append(i[1].get('цена'))
     product_counts.append(i[1].get('количество'))
     product_measures.append(i[1].get('eд'))
 
-report = {
-    'название': list(set(product_names)),
-    'цена': list(set(product_prices)),
-    'количество': list(set(product_counts)),
-    'eд': list(set(product_measures))
-}
+rep_dict.update({'название': product_names, 'цена': product_prices,'количество': product_counts,'eд': product_measures})
 
-print(f"Отчет по списку товаров: \n{report}")
+print(rep_dict)
