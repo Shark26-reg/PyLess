@@ -42,7 +42,7 @@ if __name__ == "__main__":
         }
     }
 
-    write_dict_to_yaml(my_dict, 'file.yaml')
+    write_dict_to_yaml(my_dict, 'file1.yaml')
 print(read_yaml_file())
 
 
